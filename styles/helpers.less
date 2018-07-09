@@ -76,3 +76,32 @@
   border-bottom-style: solid;
   border-bottom-color: @border-color;
 }
+
+// Floating elements
+.overflow-fix {
+  overflow: auto;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Hiding
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+// Corners
+.border-radius-single(@radius) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
