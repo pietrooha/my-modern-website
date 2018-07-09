@@ -1,0 +1,15 @@
+// Text variables
+@basic-font-size: 13px;
+@basic-line-height: 24px;
+@paragraph-margin: 0 0 15px;
+
+// Headers mixins
+.header-mixin(@header-font-size;@header-margin-bottom;@header-color: @basic-header-color) {
+  font-size: @header-font-size;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: @header-margin-bottom;
+  color: @header-color;
+  font-weight: 400;
+}
