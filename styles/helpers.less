@@ -105,3 +105,29 @@
   -moz-border-radius: @radius;
   -webkit-border-radius: @radius;
 }
+
+// Basic transition 0.2s
+.basic-transition {
+  transition: all 0.2s ease-in-out;
+}
+
+// Variable transition
+.variable-transition(@length) {
+  transition: all @length ease-in-out;
+}
+
+// Translate 3D
+.translate3d(@move-x;@move-y;@move-z) {
+  transform: translateX(@move-x);
+  transform: translateY(@move-y);
+  transform: translateZ(@move-z);
+}
+
+
+// Overlay
+.dark-overlay {
+  content: "";
+  z-index: 0;
+  .absolute-one-hundred-size;
+  background: none repeat 0 0 rgba(30, 30, 30, 0.5);
+}
