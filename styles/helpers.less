@@ -25,6 +25,13 @@
   text-align: initial;
 }
 
+// Vertical alignment
+.center-vertical {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 // Visibility
 .invisible {
   display: none;
@@ -36,4 +43,36 @@
 
 .block {
   display: block;
+}
+
+// Sizes
+.absolute-one-hundred-size {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.size(@width;@height) {
+  width: @width;
+  height: @height;
+}
+
+// Lists
+.list-style-none {
+  list-style-type: none;
+}
+
+// Frames
+.section-border-top(@border-color: @basic-border-color) {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: @border-color;
+}
+
+.section-border-bottom(@border-color: @basic-border-color) {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: @border-color;
 }
