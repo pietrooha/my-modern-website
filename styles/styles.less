@@ -76,3 +76,15 @@ a {
 h1, h2, h3 {
   line-height: 1.1;
 }
+
+// Mixin for buttons
+.basic-button(@color;@background-color) {
+  color: @color;
+  background-color: @background-color;
+  text-decoration: none;
+  .inline-block;
+  font-size: @basic-font-size;
+  font-weight: 400;
+  line-height: @basic-line-height;
+  text-transform: uppercase;
+}
