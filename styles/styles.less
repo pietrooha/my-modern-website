@@ -88,3 +88,23 @@ h1, h2, h3 {
   line-height: @basic-line-height;
   text-transform: uppercase;
 }
+
+/*** Header ***/
+header {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: @basic-background;
+  border-bottom: 1px solid @basic-border-color;
+  box-shadow: 0 0 1px @basic-border-color;
+  .navbar {
+    height: 63px;
+    .nav-logo {
+      .float-left;
+      .center-vertical;
+      z-index: 2;
+    }
+  }
+}
