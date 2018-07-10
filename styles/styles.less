@@ -109,6 +109,14 @@ header {
   }
 }
 
+// Hide main menu
+#main-menu {
+  .invisible;
+  @media @phone {
+    .block;
+  }
+}
+
 .main-menu-content {
   .float-right;
   .center-vertical;
@@ -136,5 +144,15 @@ header {
         font-size: 14px;
       }
     }
+  }
+}
+
+// mobile menu
+.slicknav_menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  @media @phone {
+    .invisible;
   }
 }
