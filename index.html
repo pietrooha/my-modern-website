@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,400i" rel="stylesheet">
+    <!-- CSS bxSlider -->
+    <link rel="stylesheet" href="styles/jquery.bxslider.css">
     <!-- LESS styles -->
     <link rel="stylesheet" type="text/less" href="styles/main.less" />
     <!-- JS LESS -->
@@ -16,6 +18,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- mobile menu -->
     <script src="js/jquery.slicknav.min.js"></script>
+    <!-- JS bxSlider  -->
+    <script src="js/jquery.bxslider.min.js"></script>
 </head>
 <body>
     <!-- main container -->
@@ -61,7 +65,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="main-slide-1">
+                    <div class="main-slide-2">
                         <div class="container">
                             <div class="main-slider-content">
                                 <h1>Based on LESS</h1>
@@ -410,7 +414,14 @@
             prependTo: '#attach-mobile-menu',
             label: ''
           });
-        })
+          /* main slider */
+          $('#main-slider').bxSlider({
+            mode: 'fade',
+            auto: true,
+            controls: true,
+            pager: false
+          });
+        });
     </script>
 </body>
 </html>
