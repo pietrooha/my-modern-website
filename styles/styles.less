@@ -399,3 +399,26 @@ header {
     }
   }
 }
+
+// The bar below the video
+.section-video-text {
+  background-color: @accent-color;
+  padding: 50px 0;
+  .center-text;
+  h2 {
+    color: @brightest-text-color;
+    margin-bottom: 0;
+    a {
+      .basic-button(@brightest-text-color;@accent-color);
+      margin: 8px 0 8px 65px;
+      padding: 10px 30px;
+      border: 2px solid @brightest-text-color;
+      .border-radius-single(2px);
+      .basic-transition;
+      &:hover {
+        color: @accent-color;
+        background-color: @brightest-text-color;
+      }
+    }
+  }
+}
