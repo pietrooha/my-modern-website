@@ -235,3 +235,37 @@ header {
     border: 1px solid @brightest-text-color;
   }
 }
+
+// Our services
+.our-services {
+  padding: 80px 0 60px;
+  .overflow-fix;
+  .single-col {
+    margin-bottom: 30px;
+    .center-text;
+    span {
+      .inline-block;
+      .size(90px;90px);
+      background: @alternate-background;
+      .center-text;
+      .border-radius-single(50%);
+      margin-bottom: 30px;
+      .basic-transition;
+      &:hover {
+        background: @accent-color;
+      }
+      &:hover > i {
+        color: @brightest-text-color;
+        cursor: default;
+      }
+      i {
+        color: @accent-color;
+        font-size: 30px;
+        line-height: 90px;
+      }
+    }
+    @media @tablet {
+      margin-bottom: 0;
+    }
+  }
+}
