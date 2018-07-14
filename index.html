@@ -20,6 +20,8 @@
     <script src="js/jquery.slicknav.min.js"></script>
     <!-- JS bxSlider  -->
     <script src="js/jquery.bxslider.min.js"></script>
+    <!-- Loading images -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
 </head>
 <body>
     <!-- main container -->
@@ -414,6 +416,8 @@
             prependTo: '#attach-mobile-menu',
             label: ''
           });
+        });
+        $('#main-container').imagesLoaded(function () {
           /* main slider */
           $('#main-slider').bxSlider({
             mode: 'fade',
@@ -421,7 +425,7 @@
             controls: true,
             pager: false
           });
-        });
+        })
     </script>
 </body>
 </html>
