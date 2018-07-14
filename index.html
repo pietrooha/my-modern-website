@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,400i" rel="stylesheet">
     <!-- CSS bxSlider -->
     <link rel="stylesheet" href="styles/jquery.bxslider.css">
+    <!-- owl slider -->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
     <!-- LESS styles -->
     <link rel="stylesheet" type="text/less" href="styles/main.less" />
     <!-- JS LESS -->
@@ -22,6 +25,8 @@
     <script src="js/jquery.bxslider.min.js"></script>
     <!-- Loading images -->
     <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- owl slider -->
+    <script src="owl-carousel/owl.carousel.min.js"></script>
 </head>
 <body>
     <!-- main container -->
@@ -424,6 +429,10 @@
             auto: true,
             controls: true,
             pager: false
+          });
+          $('#portfolio-carousel').owlCarousel({
+            autoPlay: 10000,
+            items: 3
           });
         })
     </script>
