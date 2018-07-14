@@ -27,6 +27,8 @@
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <!-- owl slider -->
     <script src="owl-carousel/owl.carousel.min.js"></script>
+    <!-- countTo -->
+    <script src="js/jquery.countTo.js"></script>
 </head>
 <body>
     <!-- main container -->
@@ -273,25 +275,25 @@
             <div class="container">
                 <div class="statistics-single-item single-col">
                     <div class="statistics-content">
-                        <h3></h3>
+                        <h3><span class="timer" data-from="0" data-to="112" data-speed="5000"></span></h3>
                         <p>Satisfied customers</p>
                     </div>
                 </div>
                 <div class="statistics-single-item single-col">
                     <div class="statistics-content">
-                        <h3></h3>
+                        <h3><span class="timer" data-from="0" data-to="365" data-speed="5000"></span></h3>
                         <p>Satisfied customers</p>
                     </div>
                 </div>
                 <div class="statistics-single-item single-col">
                     <div class="statistics-content">
-                        <h3></h3>
+                        <h3><span class="timer" data-from="0" data-to="45" data-speed="5000"></span></h3>
                         <p>Satisfied customers</p>
                     </div>
                 </div>
                 <div class="statistics-single-item single-col">
                     <div class="statistics-content">
-                        <h3></h3>
+                        <h3><span class="timer" data-from="0" data-to="541" data-speed="5000"></span></h3>
                         <p>Satisfied customers</p>
                     </div>
                 </div>
@@ -423,6 +425,8 @@
             prependTo: '#attach-mobile-menu',
             label: ''
           });
+          /* countTo */
+          $('.timer').countTo();
         });
         $('#main-container').imagesLoaded(function () {
           /* main slider */
