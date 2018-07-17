@@ -587,3 +587,24 @@ header {
 .bx-viewport {
   min-height: 90px;
 }
+
+// Footer
+// Footer - general
+footer {
+  background-color: @footer-background;
+  color: @bright-text-color;
+}
+
+.footer-main {
+  padding: 84px 0 65px;
+  .overflow-fix;
+  h3 {
+    .header-mixin(18px;30px;@brightest-text-color);
+  }
+  .single-col {
+    margin-bottom: 30px;
+    @media @tablet {
+      margin-bottom: 0;
+    }
+  }
+}
