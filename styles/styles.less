@@ -635,3 +635,38 @@ footer {
     }
   }
 }
+
+// footer - our blog
+.our-blog {
+  ul {
+    .list-style-none;
+    li {
+      padding-top: 15px;
+      border-top: 1px solid @footer-social-borders;
+      &:first-child {
+        padding-top: 0;
+        border-top: none;
+      }
+    }
+    h4 {
+      margin: 0;
+      font-size: 13px;
+      a {
+        color: @bright-text-color;
+        font-weight: 400;
+        .basic-transition;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.post-date {
+  line-height: @basic-line-height;
+  margin: 0 0 10px;
+  color: @footer-post-date;
+  font-size: 12px;
+  .inline-block;
+}
