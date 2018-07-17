@@ -608,3 +608,30 @@ footer {
     }
   }
 }
+
+// footer - about us
+.footer-social {
+  .list-style-none;
+  li {
+    .inline-block;
+    margin-right: 9px;
+    margin-bottom: 3px;
+    a {
+      .inline-block;
+      .size(30px;30px);
+      border: 1px solid @footer-social-borders;
+      .border-radius-single(4px);
+      .center-text;
+      text-decoration: none;
+      .basic-transition;
+      &:hover {
+        background-color: @footer-social-borders;
+      }
+      i {
+        font-size: 14px;
+        color: @footer-social-icons;
+        line-height: 28px;
+      }
+    }
+  }
+}
