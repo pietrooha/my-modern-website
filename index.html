@@ -30,6 +30,8 @@
     <script src="owl-carousel/owl.carousel.min.js"></script>
     <!-- countTo -->
     <script src="js/jquery.countTo.js"></script>
+    <!-- Viewport Checker -->
+    <script src="js/jquery.viewportchecker.js"></script>
 </head>
 <body>
     <!-- main container -->
@@ -66,10 +68,10 @@
                     <div class="main-slide-1">
                         <div class="container">
                             <div class="main-slider-content">
-                                <h1>Fully responsive project</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                <a href="">Look</a>
-                                <img src="images/slider_1_phone.png" alt="">
+                                <h1 class="animated fadeInDown">Fully responsive project</h1>
+                                <p class="animated fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href=""  class="animated fadeInUp">Look</a>
+                                <img src="images/slider_1_phone.png" alt=""  class="animated fadeInDown">
                             </div>
                         </div>
                     </div>
@@ -78,10 +80,10 @@
                     <div class="main-slide-2">
                         <div class="container">
                             <div class="main-slider-content">
-                                <h1>Based on LESS</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                <a href="">Look</a>
-                                <img src="images/slider_2_tablet.png" alt="">
+                                <h1 class="animated fadeInDown">Based on LESS</h1>
+                                <p class="animated fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="" class="animated fadeInUp">Look</a>
+                                <img src="images/slider_2_tablet.png" alt="" class="animated fadeInDown">
                             </div>
                         </div>
                     </div>
@@ -470,6 +472,10 @@
           });
           /* countTo */
           $('.timer').countTo();
+          /* viewport */
+          $('.our-team').viewportChecker({
+            classToAdd: 'animated swing'
+          });
         });
         $('#main-container').imagesLoaded(function () {
           /* main slider */
