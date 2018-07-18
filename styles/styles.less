@@ -688,3 +688,24 @@ footer {
     }
   }
 }
+
+// footer - links
+.more-links {
+  li {
+    .block;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid @footer-social-borders;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  a {
+    color: @bright-text-color;
+    line-height: @basic-line-height;
+    .basic-transition;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
