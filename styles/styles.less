@@ -611,7 +611,6 @@ footer {
 
 // footer - about us
 .footer-social {
-  .list-style-none;
   li {
     .inline-block;
     margin-right: 9px;
@@ -639,7 +638,6 @@ footer {
 // footer - our blog
 .our-blog {
   ul {
-    .list-style-none;
     li {
       padding-top: 15px;
       border-top: 1px solid @footer-social-borders;
@@ -669,4 +667,24 @@ footer {
   color: @footer-post-date;
   font-size: 12px;
   .inline-block;
+}
+
+// footer - gallery
+.footer-gallery {
+  ul {
+    li {
+      .inline-block;
+      margin-right: 2px;
+      margin-bottom: 6px;
+      img {
+        width: 80px;
+      }
+      a {
+        .basic-transition;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
 }
